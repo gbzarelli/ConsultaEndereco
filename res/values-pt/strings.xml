@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sistem -->
+    <string name="app_name">Consulta Endereço</string>
+    <string name="search_title">Consulta</string>
+    <string name="search_hint">Meus Lugares</string>
+
+    <!-- Menus -->
+    <string name="menu">Menu</string>
+    <string name="drawer_open">Abrir menu de navegação</string>
+    <string name="drawer_close">Fechar menu de navegação</string>
+
+    <string-array name="menus">
+        <item>Consulta endereço</item>
+        <item>Onde estou?</item>
+        <item>Meus lugares</item>
+        <item>Sobre</item>
+    </string-array>
+
+    <!-- Find Address -->
+    <string name="find_address_typequery">Tipo de consulta</string>
+    <string name="tipo_consulta_adds">Endereço</string>
+    <string name="tipo_consulta_cep">CEP</string>
+    <string name="find_address_bt_consulta">Buscar</string>
+    <string name="capture_speak">Fale o endereço</string>
+    <string name="find_result_fail_conn">Verifique a conexão da internet.</string>
+    <string name="find_address_enter_register">Entre com os dados.</string>
+    <string name="find_address_hint_address">Ex: Rua João Bim 363, Ribeirão Preto, Brasil</string>
+    <string name="find_address_hint_zipcode">Ex: 14090420</string>
+    
+
+    <!-- My Places -->
+    <string name="my_places_without_register">&lt;Sem registros&gt;</string>
+
+    <string-array name="dialog_ops">
+        <item>Discar contato</item>
+        <item>Editar informações</item>
+        <item>Remover dos Meus Lugares</item>
+        <item>Abrir em aplicação de mapa</item>
+    </string-array>
+
+    <!--  -->
+    <string name="toast_opcoes">Selecione o item para ver as opções.</string>
+    <string name="toast_onclicklong">Use somente um click</string>
+    <string name="aguarde_progresso">Aguarde, buscando&#8230;</string>
+    <string name="op_item_result_1">Adicionar aos Meus Lugares</string>
+    <string name="op_item_result_2">Abrir em aplicação de mapa</string>
+    <string name="feedback_1">Adicionado com sucesso</string>
+    <string name="tel_nao_valido">Contato inválido</string>
+
+    <!-- About -->
+    <string name="sobre_lb_desenvolvimento">Desenvolvedor</string>
+    <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
+    <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>
+    <string name="sobre_lb_design">Design</string>
+    <string name="sobre_design">Jessé Suursoo</string>
+    <string name="sobre_email_design">suursoo@gmail.com</string>
+
+    <!-- Edit -->
+    <string name="edit_inf_nome">Nome</string>
+    <string name="edit_inf_tel">Contato (telefone)</string>
+    <string name="edit_inf_end">Endereço</string>
+    <string name="edit_inf_obs">Observação</string>
+    <string name="edit_inf_hint_nome">Entre com o nome</string>
+    <string name="edit_inf_hint_tel">Entre com o telefone</string>
+    <string name="edit_inf_hint_obs">Entre com uma observação</string>
+    <string name="edit_inf_bt_save">Salvar</string>
+
+    <!-- Alerta RecognizePeech -->
+    <string name="recognizerspeech_alert_fail">Erro</string>
+    <string name="recognizerspeech_alert_what">O que você quis dizer?</string>
+    <string name="recognizerspeech_alert_confirm">Confirma</string>
+    <string name="recognizerspeech_alert_not_support">Seu dispositivo não suporta este recurso</string>
+
+    <!-- Alerta -->
+    <string name="alert_attention">Atenção</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_yes">Sim</string>
+    <string name="alert_no">Não</string>
+    <string name="alert_edit_favorite">Deseja editar as informações para adicionar aos Meus Locais?</string>
+    <string name="alert_remove_favorite">Deseja realmente remover as informações dos Meus Locais?</string>
+    <string name="alert_msg_habilit_gps">Seu GPS está desabilitado! Click para habilitar.</string>
+    <string name="alert_title_habilit_gps">Habilitar GPS</string>
+
+    <!-- Frag Where AmI -->
+    <string name="frag_whami_verify_gps">Verifique se seu GPS está habilitado.</string>
+    <string name="frag_whami_verifying_gps">Verificando GPS&#8230;</string>
+    <string name="frag_whami_verifying">Verificando endereço&#8230;</string>
+    <string name="frag_whami_location_find">Localização:</string>
+    <string name="frag_whami_address_notfound">Endereço não encontrado</string>
+    <string name="frag_whami_without_connection">Verifique sua conexão e atualize.</string>
+
+    <!-- Content Description Images -->
+    <string name="content_description_refresh">Botão atualizar</string>
+    <string name="content_description_speak">Botão fala</string>
+    <string name="content_description_logo">Consulta Endereço</string>
+    <string name="content_description_location">Abrir em aplicação de mapa</string>
+
+</resources>

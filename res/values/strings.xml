@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Sistem -->
+    <string name="ad_unit_id">ca-app-pub-4334384724173584/9835577411</string>
+    <string name="app_name">Address Finder</string>
+    <string name="version">v3.0</string>
+    <string name="search_title">Search</string>
+    <string name="search_hint">My place</string>
+    <!-- Publicacao -->
+    <!--<string name="maps_api_key">AIzaSyBU0TDnui3hc-Le86nQ32PbmYiwmHFXNZQ</string>-->
+    <!-- Testes -->
+     <string name="maps_api_key">AIzaSyB5ZJqeNbbi9qdX1XhMs9cCUHSYMTH0QsU</string> 
+
+
+    <!-- Menus -->
+    <string name="menu">Menu</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="menus">
+        <item>Find address</item>
+        <item>Where am I?</item>
+        <item>My places</item>
+        <item>About</item>
+    </string-array>
+
+    <!-- Find Address -->
+    <string name="find_address_typequery">Type of query</string>
+    <string name="tipo_consulta_adds">Address</string>
+    <string name="tipo_consulta_cep">Zipcode (Brazil)</string>
+    <string name="find_address_bt_consulta">Search</string>
+    <string name="capture_speak">Speak the address</string>
+    <string name="find_result_fail_conn">Check your internet connection.</string>
+    <string name="find_address_enter_register">Enter a record.</string>
+    <string name="find_address_hint_address">Ex: 941 E Weber Rd, Columbus, OH, EUA</string>
+    <string name="find_address_hint_zipcode">Ex: 14090420</string>
+
+    <!-- My Places -->
+    <string name="my_places_without_register">&lt;NO RECORDS&gt;</string>
+
+    <string-array name="dialog_ops">
+        <item>Dial contact</item>
+        <item>Edit information</item>
+        <item>Remove from my places</item>
+        <item>Open in maps application</item>
+    </string-array>
+
+    <!--  -->
+    <string name="toast_opcoes">Select the item to see the options.</string>
+    <string name="toast_onclicklong">Use only one click</string>
+    <string name="aguarde_progresso">Wait, search&#8230;</string>
+    <string name="op_item_result_1">Add to my places</string>
+    <string name="op_item_result_2">Open in maps application</string>
+    <string name="feedback_1">Successfully added</string>
+    <string name="tel_nao_valido">Invalid contact</string>
+
+    <!-- About -->
+    <string name="sobre_lb_desenvolvimento">Developer</string>
+    <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
+    <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>
+    <string name="sobre_lb_design">Design</string>
+    <string name="sobre_design">Jessé Suursoo</string>
+    <string name="sobre_email_design">suursoo@gmail.com</string>
+
+    <!-- Edit -->
+    <string name="edit_inf_nome">Name</string>
+    <string name="edit_inf_tel">Contact (phone)</string>
+    <string name="edit_inf_end">Address</string>
+    <string name="edit_inf_obs">Note</string>
+    <string name="edit_inf_hint_nome">Enter the name</string>
+    <string name="edit_inf_hint_tel">Enter the phone</string>
+    <string name="edit_inf_hint_obs">Enter the Note</string>
+    <string name="edit_inf_bt_save">Save</string>
+
+    <!-- Alerta RecognizePeech -->
+    <string name="recognizerspeech_alert_fail">Fault</string>
+    <string name="recognizerspeech_alert_what">What do you mean?</string>
+    <string name="recognizerspeech_alert_confirm">Confirm</string>
+    <string name="recognizerspeech_alert_not_support">Your device does not support this resource</string>
+
+    <!-- Alerta -->
+    <string name="alert_attention">Attention</string>
+    <string name="alert_ok">OK</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_no">No</string>
+    <string name="alert_edit_favorite">Want to edit the information to add to My Places?</string>
+    <string name="alert_remove_favorite">Really remove the information from my places?</string>
+    <string name="alert_msg_habilit_gps">Your GPS is disabled! Click to enable.</string>
+    <string name="alert_title_habilit_gps">Enable GPS</string>
+
+    <!-- Frag Where AmI -->
+    <string name="frag_whami_verify_gps">Make sure your GPS is enabled.</string>
+    <string name="frag_whami_verifying_gps">Verifying GPS&#8230;</string>
+    <string name="frag_whami_verifying">Verifying address&#8230;</string>
+    <string name="frag_whami_location_find">Location find:</string>
+    <string name="frag_whami_address_notfound">Address not found</string>
+    <string name="frag_whami_without_connection">Check your connection and refresh.</string>
+
+    <!-- Content Description Images -->
+    <string name="content_description_refresh">Button refresh</string>
+    <string name="content_description_speak">Button Speak</string>
+    <string name="content_description_logo">Address Finder</string>
+    <string name="content_description_location">Open in maps application</string>
+
+</resources>

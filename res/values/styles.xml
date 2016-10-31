@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textViewStyle">@style/estilo_text_apparence</item>
+        <item name="android:editTextStyle">@style/estilo_edit_apparence</item>
+        <item name="android:radioButtonStyle">@style/estilo_radio</item>
+        <item name="android:buttonStyle">@style/estilo_botao</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="estilo_text_apparence" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/texto_branco</item>
+        <item name="android:textSize">@dimen/texto_2</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="estilo_edit_apparence" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/texto_2</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+
+    <style name="estilo_radio" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/texto_branco</item>
+        <item name="android:textSize">@dimen/texto_2</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="estilo_botao" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">@dimen/texto_2</item>
+        <item name="android:background">@drawable/bt_consultar</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="menu_titulo" parent="@style/estilo_text_apparence">
+        <item name="android:textColor">@color/texto_laranja</item>
+        <item name="android:textSize">@dimen/texto_1</item>
+    </style>
+
+</resources>

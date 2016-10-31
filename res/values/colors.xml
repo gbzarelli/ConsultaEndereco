@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+ 
+    <color name="bt_press">#ffcd9818</color>
+    <color name="bt_normal">#FFFBB03B</color>
+    <color name="bt_focused">#FFF7BE45</color>
+   
+    
+    <color name="divisor">#FF4d4d4d</color>
+    <color name="background">#FF1a1a1a</color>
+    
+    <color name="texto_branco">#FFFFFFFF</color>
+    <color name="texto_cinza">#FF787878</color>
+    <color name="texto_laranja">#FFFBB03B</color>
+    
+    <color name="barra_action">#FFFBB03B</color>
+    
+    <color name="menu_selecionar">#FF226B8B</color>
+
+</resources>

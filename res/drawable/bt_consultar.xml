@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bt_pesquisar_press" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/bt_pesquisar"></item>
+
+    <!--
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bt_press"/>
+           
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+    <item android:state_focused="true" >
+        <shape>
+            <solid android:color="@color/bt_normal"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/bt_focused" />
+         
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp" />
+        </shape>
+    </item>
+    
+    <item>        
+        <shape android:shape="rectangle">
+            
+            <solid android:color="@color/bt_normal"/>
+        
+            <padding
+                android:left="10dp"
+                android:top="10sp"
+                android:right="10dp"
+                android:bottom="10dp" />
+            
+            
+            </shape>
+        </item>
+    -->
+
+</selector>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="padding_pagina">15dp</dimen>
+    <dimen name="padding_titulo">10dp</dimen>
+    <dimen name="padding_espacos">10dp</dimen>
+    <dimen name="espessura_linha">1dp</dimen>
+
+    <!-- Text -->
+    <dimen name="texto_1">20sp</dimen>
+    <dimen name="texto_2">18sp</dimen>
+    <dimen name="texto_3">16sp</dimen>
+
+</resources>

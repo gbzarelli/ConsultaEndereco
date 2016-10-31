@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseThemev13" parent="@style/AppBaseTheme">
+        <item name="android:editTextStyle">@style/estilo_edit_apparence_v13</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseThemev13"></style>
+
+    <style name="estilo_edit_apparence_v13" parent="@style/estilo_edit_apparence">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:textColor">@color/texto_branco</item>
+    </style>
+
+</resources>
