@@ -1,0 +1,154 @@
+plugins {
+    id 'com.android.application'
+}
+
+import java.util.Properties
+
+Properties localProperties = new Properties()
+File localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withInputStream { localProperties.load(it) }
+}
+
+def configuredMapsKey = localProperties.getProperty('MAPS_API_KEY', '')
+def configuredAdsAppId = localProperties.getProperty('ADMOB_APP_ID', '')
+def configuredAdsUnitId = localProperties.getProperty('ADMOB_BANNER_UNIT_ID', '')
+def signingPropertiesPath = localProperties.getProperty('SIGNING_PROPERTIES_FILE', '')
+def releaseSigning = null
+if (signingPropertiesPath) {
+    File signingPropertiesFile = new File(signingPropertiesPath)
+    if (signingPropertiesFile.isFile()) {
+        Properties signingProperties = new Properties()
+        signingPropertiesFile.withInputStream { signingProperties.load(it) }
+        def storeFilePath = signingProperties.getProperty('storeFile', '')
+        def storePasswordFilePath = signingProperties.getProperty('storePasswordFile', '')
+        def keyAlias = signingProperties.getProperty('keyAlias', '')
+        def keyPasswordFilePath = signingProperties.getProperty('keyPasswordFile', '')
+        if (storeFilePath && storePasswordFilePath && keyAlias && keyPasswordFilePath) {
+            File keystoreFile = new File(storeFilePath)
+            File storePasswordFile = new File(storePasswordFilePath)
+            File keyPasswordFile = new File(keyPasswordFilePath)
+            if (keystoreFile.isFile() && storePasswordFile.isFile() && keyPasswordFile.isFile()) {
+                releaseSigning = [
+                        storeFile: keystoreFile,
+                        storePassword: storePasswordFile.getText('UTF-8').trim(),
+                        keyAlias: keyAlias,
+                        keyPassword: keyPasswordFile.getText('UTF-8').trim()
+                ]
+            }
+        }
+    }
+}
+
+android {
+    namespace 'br.com.helpdev.consultaendereco'
+    compileSdk 36
+
+    signingConfigs {
+        if (releaseSigning != null) {
+            v2Upload {
+                storeFile releaseSigning.storeFile
+                storePassword releaseSigning.storePassword
+                keyAlias releaseSigning.keyAlias
+                keyPassword releaseSigning.keyPassword
+            }
+        }
+    }
+
+    defaultConfig {
+        applicationId 'br.com.helpdev.consultaendereco'
+        minSdk 24
+        targetSdk 36
+        versionCode 2
+        versionName '3.0.1'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        manifestPlaceholders = [
+                mapsApiKey: configuredMapsKey,
+                admobAppId: ''
+        ]
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile '../AndroidManifest.xml'
+            java.srcDirs = ['../src']
+            res.srcDirs = ['../res']
+        }
+        test.java.srcDirs = ['src/test/java']
+        androidTest.java.srcDirs = ['src/androidTest/java']
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-debug'
+            manifestPlaceholders.admobAppId = 'ca-app-pub-3940256099942544~3347511713'
+            resValue 'string', 'ad_unit_id', 'ca-app-pub-3940256099942544/9214589741'
+        }
+        release {
+            if (releaseSigning != null) {
+                signingConfig signingConfigs.v2Upload
+            }
+            manifestPlaceholders.admobAppId = configuredAdsAppId
+            resValue 'string', 'ad_unit_id', configuredAdsUnitId
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), '../proguard-project.txt'
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+tasks.register('validateReleaseConfiguration') {
+    doLast {
+        def missing = []
+        if (!configuredMapsKey) missing << 'MAPS_API_KEY'
+        if (!configuredAdsAppId) missing << 'ADMOB_APP_ID'
+        if (!configuredAdsUnitId) missing << 'ADMOB_BANNER_UNIT_ID'
+        if (releaseSigning == null) missing << 'v2 upload signing configuration'
+        if (!missing.isEmpty()) {
+            throw new GradleException("Configure release secrets in local.properties: ${missing.join(', ')}")
+        }
+    }
+}
+tasks.matching { it.name == 'preReleaseBuild' }.configureEach { dependsOn tasks.named('validateReleaseConfiguration') }
+
+tasks.register('validateV2Identity') {
+    doLast {
+        def mismatches = []
+        if (android.defaultConfig.applicationId != 'br.com.helpdev.consultaendereco') {
+            mismatches << 'applicationId'
+        }
+        if (android.defaultConfig.versionCode != 2) {
+            mismatches << 'versionCode'
+        }
+        if (android.namespace != 'br.com.helpdev.consultaendereco') {
+            mismatches << 'namespace'
+        }
+        if (!mismatches.isEmpty()) {
+            throw new GradleException("v2 identity mismatch: ${mismatches.join(', ')}")
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.fragment:fragment:1.8.9'
+    implementation 'androidx.drawerlayout:drawerlayout:1.2.0'
+    implementation 'com.google.android.gms:play-services-maps:20.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.4.0'
+    implementation 'com.google.android.gms:play-services-ads:25.5.0'
+    implementation 'com.google.code.gson:gson:2.13.2'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20250517'
+    androidTestImplementation 'androidx.test:runner:1.7.0'
+    androidTestImplementation 'androidx.test:rules:1.7.0'
+}

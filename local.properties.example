@@ -1,0 +1,5 @@
+# Copy to local.properties and fill with credentials from the Google consoles.
+SIGNING_PROPERTIES_FILE=/absolute/path/to/android-keys/consultaendereco-v2-signing.properties
+MAPS_API_KEY=replace_with_restricted_maps_sdk_key
+ADMOB_APP_ID=ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy
+ADMOB_BANNER_UNIT_ID=ca-app-pub-xxxxxxxxxxxxxxxx/zzzzzzzzzz

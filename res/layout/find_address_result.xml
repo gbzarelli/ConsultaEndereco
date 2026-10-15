@@ -64,10 +64,22 @@
         <ListView
             android:id="@+id/find_result_listview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:cacheColorHint="@android:color/transparent"
             android:divider="@color/divisor"
             android:dividerHeight="@dimen/espessura_linha"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/find_result_attribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/geocoding_attribution"
+            android:textColor="@color/texto_cinza"
+            android:textSize="12sp"
             android:visibility="gone" />
     </LinearLayout>
 

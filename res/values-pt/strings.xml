@@ -27,7 +27,9 @@
     <string name="find_result_fail_conn">Verifique a conexão da internet.</string>
     <string name="find_address_enter_register">Entre com os dados.</string>
     <string name="find_address_hint_address">Ex: Rua João Bim 363, Ribeirão Preto, Brasil</string>
+    <string name="find_address_invalid_zipcode">Informe um CEP válido com oito dígitos.</string>
     <string name="find_address_hint_zipcode">Ex: 14090420</string>
+    <string name="geocoding_attribution">Resultados por OpenStreetMap © contribuidores</string>
     
 
     <!-- My Places -->

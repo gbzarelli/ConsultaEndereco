@@ -2,15 +2,12 @@
 <resources>
 
     <!-- Sistem -->
-    <string name="ad_unit_id">ca-app-pub-4334384724173584/9835577411</string>
     <string name="app_name">Address Finder</string>
-    <string name="version">v3.0</string>
+    <string name="version">v3.0.1</string>
     <string name="search_title">Search</string>
     <string name="search_hint">My place</string>
     <!-- Publicacao -->
-    <!--<string name="maps_api_key">AIzaSyBU0TDnui3hc-Le86nQ32PbmYiwmHFXNZQ</string>-->
     <!-- Testes -->
-     <string name="maps_api_key">AIzaSyB5ZJqeNbbi9qdX1XhMs9cCUHSYMTH0QsU</string> 
 
 
     <!-- Menus -->
@@ -34,7 +31,9 @@
     <string name="find_result_fail_conn">Check your internet connection.</string>
     <string name="find_address_enter_register">Enter a record.</string>
     <string name="find_address_hint_address">Ex: 941 E Weber Rd, Columbus, OH, EUA</string>
+    <string name="find_address_invalid_zipcode">Enter a valid eight-digit CEP.</string>
     <string name="find_address_hint_zipcode">Ex: 14090420</string>
+    <string name="geocoding_attribution">Address data © OpenStreetMap contributors</string>
 
     <!-- My Places -->
     <string name="my_places_without_register">&lt;NO RECORDS&gt;</string>

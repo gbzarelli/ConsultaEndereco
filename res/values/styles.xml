@@ -3,6 +3,13 @@
 
     <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/texto_branco</item>
+        <item name="android:textColorSecondary">@color/texto_branco</item>
+        <item name="android:textColorHint">@color/texto_cinza</item>
+        <item name="colorAccent">@color/texto_laranja</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:alertDialogTheme">@style/AppAlertDialogTheme</item>
+        <item name="alertDialogTheme">@style/AppAlertDialogTheme</item>
         <item name="android:textViewStyle">@style/estilo_text_apparence</item>
         <item name="android:editTextStyle">@style/estilo_edit_apparence</item>
         <item name="android:radioButtonStyle">@style/estilo_radio</item>
@@ -12,6 +19,13 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/background</item>
+        <item name="android:textColorSecondary">@color/divisor</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorAccent">@color/texto_laranja</item>
+    </style>
 
     <style name="estilo_text_apparence" parent="@android:style/TextAppearance">
         <item name="android:layout_width">match_parent</item>
