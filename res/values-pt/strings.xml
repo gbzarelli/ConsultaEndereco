@@ -55,6 +55,9 @@
     <string name="sobre_lb_desenvolvimento">Desenvolvedor</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>
+    <string name="sobre_lb_transparencia">Transparência</string>
+    <string name="sobre_aviso_independencia">Este app é independente e não representa, não é afiliado nem é operado pelo Governo do Brasil, pelos Correios ou por qualquer outra entidade governamental.</string>
+    <string name="sobre_fontes_cep">Fonte oficial de referência para CEP: Busca CEP dos Correios: https://buscacepinter.correios.com.br/app/cep/index.php\n\nPara realizar consultas, o app usa os serviços independentes ViaCEP: https://viacep.com.br/ e BrasilAPI: https://brasilapi.com.br/. A disponibilidade e os dados retornados dependem desses serviços.</string>
     <string name="sobre_lb_design">Design</string>
     <string name="sobre_design">Jessé Suursoo</string>
     <string name="sobre_email_design">suursoo@gmail.com</string>
