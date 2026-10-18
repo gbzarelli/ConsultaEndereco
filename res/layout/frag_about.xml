@@ -63,6 +63,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center_horizontal"
+                android:text="@string/sobre_lb_transparencia"
+                android:textColor="@color/texto_laranja"
+                android:textSize="@dimen/texto_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/sobre_aviso_independencia"
+                android:textColor="@color/texto_branco"
+                android:textSize="@dimen/texto_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:autoLink="web"
+                android:gravity="center_horizontal"
+                android:linksClickable="true"
+                android:text="@string/sobre_fontes_cep"
+                android:textColor="@color/texto_cinza"
+                android:textColorLink="@color/texto_laranja"
+                android:textSize="@dimen/texto_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
                 android:text="@string/sobre_lb_design"
                 android:textColor="@color/texto_laranja"
                 android:textSize="@dimen/texto_1" />
