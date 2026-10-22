@@ -55,6 +55,8 @@
     <string name="tel_nao_valido">Invalid contact</string>
 
     <!-- About -->
+    <string name="consulta_lb_transparencia">Transparency</string>
+    <string name="consulta_aviso_independencia">Independent app with no affiliation with the Government of Brazil, Correios, or other government entities. The official reference source is available in About.</string>
     <string name="sobre_lb_desenvolvimento">Developer</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>

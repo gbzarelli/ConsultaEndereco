@@ -25,12 +25,34 @@ public class PolicyDisclosureResourceTest {
                 aboutLayout.contains("@string/sobre_fontes_cep"));
     }
 
+    @Test
+    public void initialSearchScreenShowsGovernmentIndependenceNoticeWithoutDirectSourceLink()
+            throws Exception {
+        String strings = new String(Files.readAllBytes(findPortugueseStrings().toPath()),
+                StandardCharsets.UTF_8);
+        assertTrue("The initial search screen needs a concise independence notice",
+                strings.contains("Aplicativo independente, sem vínculo com o Governo do Brasil"));
+
+        String searchLayout = new String(Files.readAllBytes(findInitialSearchLayout().toPath()),
+                StandardCharsets.UTF_8);
+        assertTrue("The initial search screen must display the independence notice",
+                searchLayout.contains("@string/consulta_aviso_independencia"));
+        assertTrue("The initial search screen must identify the disclosure section",
+                searchLayout.contains("@string/consulta_lb_transparencia"));
+        assertTrue("The official source link remains in About, not on the initial screen",
+                !searchLayout.contains("buscacepinter.correios.com.br"));
+    }
+
     private File findPortugueseStrings() {
         return findFile("res/values-pt/strings.xml");
     }
 
     private File findAboutLayout() {
         return findFile("res/layout/frag_about.xml");
+    }
+
+    private File findInitialSearchLayout() {
+        return findFile("res/layout/frag_find_address.xml");
     }
 
     private File findFile(String path) {
