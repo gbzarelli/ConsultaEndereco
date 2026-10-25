@@ -15,7 +15,7 @@
         <item>Consulta endereço</item>
         <item>Onde estou?</item>
         <item>Meus lugares</item>
-        <item>Sobre</item>
+        <item>Transparência e fontes</item>
     </string-array>
 
     <!-- Find Address -->
@@ -53,7 +53,7 @@
 
     <!-- About -->
     <string name="consulta_lb_transparencia">Transparência</string>
-    <string name="consulta_aviso_independencia">Aplicativo independente, sem vínculo com o Governo do Brasil, os Correios ou outras entidades governamentais. A fonte oficial de referência está em Sobre.</string>
+    <string name="consulta_aviso_independencia">Aplicativo independente, sem vínculo com o Governo do Brasil, os Correios ou outras entidades governamentais. A fonte oficial de referência está em Transparência e fontes.</string>
     <string name="sobre_lb_desenvolvimento">Desenvolvedor</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>

@@ -3,7 +3,7 @@
 
     <!-- Sistem -->
     <string name="app_name">Address Finder</string>
-    <string name="version">v3.0.1</string>
+    <string name="version">v3.0.4</string>
     <string name="search_title">Search</string>
     <string name="search_hint">My place</string>
     <!-- Publicacao -->
@@ -19,7 +19,7 @@
         <item>Find address</item>
         <item>Where am I?</item>
         <item>My places</item>
-        <item>About</item>
+        <item>Transparency and sources</item>
     </string-array>
 
     <!-- Find Address -->
@@ -56,7 +56,7 @@
 
     <!-- About -->
     <string name="consulta_lb_transparencia">Transparency</string>
-    <string name="consulta_aviso_independencia">Independent app with no affiliation with the Government of Brazil, Correios, or other government entities. The official reference source is available in About.</string>
+    <string name="consulta_aviso_independencia">Independent app with no affiliation with the Government of Brazil, Correios, or other government entities. The official reference source is available in Transparency and sources.</string>
     <string name="sobre_lb_desenvolvimento">Developer</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>

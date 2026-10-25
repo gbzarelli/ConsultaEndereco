@@ -43,8 +43,40 @@ public class PolicyDisclosureResourceTest {
                 !searchLayout.contains("buscacepinter.correios.com.br"));
     }
 
+    @Test
+    public void disclosureMenuItemNamesSourcesInBothLanguages() throws Exception {
+        String portugueseStrings = new String(Files.readAllBytes(findPortugueseStrings().toPath()),
+                StandardCharsets.UTF_8);
+        String defaultStrings = new String(Files.readAllBytes(findDefaultStrings().toPath()),
+                StandardCharsets.UTF_8);
+
+        assertTrue("The Portuguese drawer must make the transparency page discoverable",
+                portugueseStrings.contains("<item>Transparência e fontes</item>"));
+        assertTrue("The default drawer must make the transparency page discoverable",
+                defaultStrings.contains("<item>Transparency and sources</item>"));
+    }
+
+    @Test
+    public void releaseIdentityIsPreparedForPolicyRemediationVersionFive() throws Exception {
+        String buildFile = new String(Files.readAllBytes(findFile("app/build.gradle").toPath()),
+                StandardCharsets.UTF_8);
+        String defaultStrings = new String(Files.readAllBytes(findDefaultStrings().toPath()),
+                StandardCharsets.UTF_8);
+
+        assertTrue("The resubmission must use a new Play version code",
+                buildFile.contains("versionCode 5"));
+        assertTrue("The identity guard must accept the remediation version",
+                buildFile.contains("android.defaultConfig.versionCode != 5"));
+        assertTrue("The About screen must show the remediation release version",
+                defaultStrings.contains("<string name=\"version\">v3.0.4</string>"));
+    }
+
     private File findPortugueseStrings() {
         return findFile("res/values-pt/strings.xml");
+    }
+
+    private File findDefaultStrings() {
+        return findFile("res/values/strings.xml");
     }
 
     private File findAboutLayout() {
