@@ -15,7 +15,7 @@
         <item>Consulta endereço</item>
         <item>Onde estou?</item>
         <item>Meus lugares</item>
-        <item>Transparência e fontes</item>
+        <item>Fontes oficiais e aviso de independência</item>
     </string-array>
 
     <!-- Find Address -->
@@ -52,14 +52,14 @@
     <string name="tel_nao_valido">Contato inválido</string>
 
     <!-- About -->
-    <string name="consulta_lb_transparencia">Transparência</string>
-    <string name="consulta_aviso_independencia">Aplicativo independente, sem vínculo com o Governo do Brasil, os Correios ou outras entidades governamentais. A fonte oficial de referência está em Transparência e fontes.</string>
+    <string name="consulta_lb_transparencia">Aviso de independência</string>
+    <string name="consulta_aviso_independencia">Aplicativo privado e independente, sem vínculo com o Governo do Brasil, os Correios ou órgãos públicos. Consulte “Fontes oficiais e aviso de independência” no menu.</string>
     <string name="sobre_lb_desenvolvimento">Desenvolvedor</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>
-    <string name="sobre_lb_transparencia">Transparência</string>
-    <string name="sobre_aviso_independencia">Este app é independente e não representa, não é afiliado nem é operado pelo Governo do Brasil, pelos Correios ou por qualquer outra entidade governamental.</string>
-    <string name="sobre_fontes_cep">Fonte oficial de referência para CEP: Busca CEP dos Correios: https://buscacepinter.correios.com.br/app/cep/index.php\n\nPara realizar consultas, o app usa os serviços independentes ViaCEP: https://viacep.com.br/ e BrasilAPI: https://brasilapi.com.br/. A disponibilidade e os dados retornados dependem desses serviços.</string>
+    <string name="sobre_lb_transparencia">Fontes oficiais e aviso de independência</string>
+    <string name="sobre_aviso_independencia">Este é um aplicativo privado e independente, desenvolvido pela Help DEV. Não representa, não é afiliado, autorizado, patrocinado, endossado nem operado pelo Governo do Brasil, pelos Correios, pelo Ministério das Comunicações ou por qualquer entidade pública.</string>
+    <string name="sobre_fontes_cep">Fontes oficiais para conferência de CEP:\nBusca CEP dos Correios: https://buscacepinter.correios.com.br/app/endereco/index.php\n\nReferência institucional sobre a ferramenta Busca CEP:\nMinistério das Comunicações: https://www.gov.br/mcom/pt-br/acesso-a-informacao/dicionario.pdf\n\nO app realiza consultas por meio dos serviços independentes ViaCEP: https://viacep.com.br/ e BrasilAPI: https://brasilapi.com.br/. A disponibilidade e os dados retornados dependem desses serviços.</string>
     <string name="sobre_lb_design">Design</string>
     <string name="sobre_design">Jessé Suursoo</string>
     <string name="sobre_email_design">suursoo@gmail.com</string>
