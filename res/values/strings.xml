@@ -3,7 +3,7 @@
 
     <!-- Sistem -->
     <string name="app_name">Address Finder</string>
-    <string name="version">v3.0.1</string>
+    <string name="version">v3.0.5</string>
     <string name="search_title">Search</string>
     <string name="search_hint">My place</string>
     <!-- Publicacao -->
@@ -19,7 +19,7 @@
         <item>Find address</item>
         <item>Where am I?</item>
         <item>My places</item>
-        <item>About</item>
+        <item>Official sources and independence notice</item>
     </string-array>
 
     <!-- Find Address -->
@@ -55,12 +55,14 @@
     <string name="tel_nao_valido">Invalid contact</string>
 
     <!-- About -->
+    <string name="consulta_lb_transparencia">Independence notice</string>
+    <string name="consulta_aviso_independencia">Private and independent app, with no affiliation with the Government of Brazil, Correios, or public bodies. See “Official sources and independence notice” in the menu.</string>
     <string name="sobre_lb_desenvolvimento">Developer</string>
     <string name="sobre_desenvolvedor">Guilherme Biff Zarelli</string>
     <string name="sobre_email_desenvolvedor">gbzarelli@helpdev.com.br</string>
-    <string name="sobre_lb_transparencia">Transparency</string>
-    <string name="sobre_aviso_independencia">This app is independent and does not represent, is not affiliated with, and is not operated by the Government of Brazil, Correios, or any other government entity.</string>
-    <string name="sobre_fontes_cep">Official ZIP code reference source: Correios Busca CEP: https://buscacepinter.correios.com.br/app/cep/index.php\n\nThe app performs searches using the independent ViaCEP service: https://viacep.com.br/ and BrasilAPI: https://brasilapi.com.br/. Availability and returned data depend on these services.</string>
+    <string name="sobre_lb_transparencia">Official sources and independence notice</string>
+    <string name="sobre_aviso_independencia">This is a private and independent app developed by Help DEV. It does not represent, is not affiliated with, authorized, sponsored, endorsed, or operated by the Government of Brazil, Correios, the Ministry of Communications, or any public entity.</string>
+    <string name="sobre_fontes_cep">Official ZIP code sources for verification:\nCorreios Busca CEP: https://buscacepinter.correios.com.br/app/endereco/index.php\n\nInstitutional reference on the Busca CEP tool:\nMinistry of Communications: https://www.gov.br/mcom/pt-br/acesso-a-informacao/dicionario.pdf\n\nThe app searches through the independent ViaCEP service: https://viacep.com.br/ and BrasilAPI: https://brasilapi.com.br/. Availability and returned data depend on those services.</string>
     <string name="sobre_lb_design">Design</string>
     <string name="sobre_design">Jessé Suursoo</string>
     <string name="sobre_email_design">suursoo@gmail.com</string>
